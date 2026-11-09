@@ -27,7 +27,12 @@ radial-gradient(ellipse at 100% 72%,rgba(27,37,30,.075),transparent 27%);}
 #shop .filters button:not(.active){background:rgba(246,242,233,.92)}
 #shop .sub{color:#4b564b}
 @media(max-width:750px){body{background-size:64px 64px,64px 64px,64px 64px;background-position:center top}.product{box-shadow:0 4px 12px rgba(27,37,30,.05)}}
- .detail-photos{display:flex;gap:10px;overflow-x:auto;margin:15px 0}.detail-photos img{width:46%;max-width:200px;aspect-ratio:1;object-fit:contain;background:#faf9f6;border:1px solid #e3ded3;border-radius:12px;flex-shrink:0}</style></head><body>
+ .detail-photos{display:flex;gap:10px;overflow-x:auto;margin:15px 0}.detail-photos img{width:46%;max-width:200px;aspect-ratio:1;object-fit:contain;background:#faf9f6;border:1px solid #e3ded3;border-radius:12px;flex-shrink:0}
+/* Display supplier product photography at readable scale until the approved artwork is mapped. */
+.product .art{height:250px!important;min-height:250px!important;overflow:hidden;background:#f4e6d4!important;padding:0!important}
+.product .art img{width:100%!important;height:100%!important;max-width:none!important;max-height:none!important;object-fit:cover!important;object-position:center 53%!important}
+@media(max-width:600px){.product .art{height:220px!important;min-height:220px!important}}
+</style></head><body>
 <header><nav><div class="logo">Micro uae <span style="color:#c69b65">☕</span></div><a href="#shop">تسوّق</a><a href="#about">ليش تختارنا؟</a><button id="languageToggle" type="button" aria-label="Switch language">English</button><button onclick="document.getElementById('cart').showModal()">السلة (<span id="count">0</span>)</button></nav></header>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">SPECIALTY COFFEE & BREWING GEAR</div><h1>قهوة تستاهل<br>كل رشفة.</h1><p>اكتشف عالم حبوب القهوة المختصة وأدوات التحضير. اختر نكهتك وطريقتك المفضلة، وخَلّ القهوة على ذوقك.</p><a class="primary" href="#shop">اكتشف المتجر ←</a></div></section>
 <div class="ornament-band" aria-hidden="true"></div>
