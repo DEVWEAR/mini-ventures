@@ -58,7 +58,7 @@ document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl
 const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
 let node;const nodes=[];while(node=walker.nextNode()){if(node.parentElement?.closest('script,style'))continue;nodes.push(node)}
 for(const n of nodes){const raw=n.nodeValue;const trimmed=raw.trim();const replacement=lang==='en'?dict[trimmed]:reverse[trimmed];if(replacement)n.nodeValue=raw.replace(trimmed,replacement)}
-search.placeholder=lang==='en'?'Search beans, roast, V60, grinders...':'ابحث عن بن، تحميص، V60، مطحنة...';
+if(search)search.placeholder=lang==='en'?'Search beans, roast, V60, grinders...':'ابحث عن بن، تحميص، V60، مطحنة...';
 toggle.textContent=lang==='en'?'العربية':'English';
 document.title='Micro uae | '+(lang==='en'?'Coffee Beans & Gear':'حبوب القهوة وأدوات التحضير');
 busy=false;
