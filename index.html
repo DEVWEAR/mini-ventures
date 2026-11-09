@@ -10,6 +10,23 @@ html{scroll-behavior:smooth}a{color:inherit}.filters button{color:var(--ink);fon
 .ornament-band{height:58px;background-color:#c69b65;background-image:radial-gradient(circle at 50% 50%,#1b251e 0 2px,transparent 2.5px),repeating-linear-gradient(45deg,transparent 0 19px,rgba(27,37,30,.17) 19px 20px,transparent 20px 40px),repeating-linear-gradient(-45deg,transparent 0 19px,rgba(27,37,30,.17) 19px 20px,transparent 20px 40px);background-size:40px 40px;position:relative;border-top:2px solid #1b251e;border-bottom:2px solid #1b251e;overflow:hidden}
 .ornament-band:after{content:'✦  MICRO UAE  ✦';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#1b251e;font:700 12px Georgia,serif;letter-spacing:4px;background:linear-gradient(90deg,transparent 20%,#c69b65 38%,#c69b65 62%,transparent 80%);pointer-events:none}
 @media(max-width:750px){.ornament-band{height:42px}.ornament-band:after{font-size:10px;letter-spacing:2px}}
+
+/* Elegant full-page forest-green ornament over warm cream */
+body{background-color:#f6f2e9;background-image:
+radial-gradient(circle at 20px 20px,rgba(27,37,30,.15) 1.5px,transparent 2px),
+linear-gradient(45deg,transparent 47.8%,rgba(27,37,30,.065) 49%,rgba(27,37,30,.065) 51%,transparent 52.2%),
+linear-gradient(-45deg,transparent 47.8%,rgba(27,37,30,.065) 49%,rgba(27,37,30,.065) 51%,transparent 52.2%);
+background-size:80px 80px,80px 80px,80px 80px;background-position:center top}
+main{position:relative;isolation:isolate}
+main:before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:
+radial-gradient(ellipse at 0% 15%,rgba(27,37,30,.075),transparent 28%),
+radial-gradient(ellipse at 100% 72%,rgba(27,37,30,.075),transparent 27%);}
+.section{position:relative}
+.section h2{color:#1b251e}
+.product{box-shadow:0 8px 22px rgba(27,37,30,.055);border-color:rgba(27,37,30,.14)}
+#shop .filters button:not(.active){background:rgba(246,242,233,.92)}
+#shop .sub{color:#4b564b}
+@media(max-width:750px){body{background-size:64px 64px,64px 64px,64px 64px;background-position:center top}.product{box-shadow:0 4px 12px rgba(27,37,30,.05)}}
 </style></head><body>
 <header><nav><div class="logo">Micro uae <span style="color:#c69b65">☕</span></div><a href="#shop">تسوّق</a><a href="#about">ليش تختارنا؟</a><button id="languageToggle" type="button" aria-label="Switch language">English</button><button onclick="document.getElementById('cart').showModal()">السلة (<span id="count">0</span>)</button></nav></header>
 <section class="hero"><div class="hero-inner"><div class="eyebrow">SPECIALTY COFFEE & BREWING GEAR</div><h1>قهوة تستاهل<br>كل رشفة.</h1><p>اكتشف عالم حبوب القهوة المختصة وأدوات التحضير. اختر نكهتك وطريقتك المفضلة، وخَلّ القهوة على ذوقك.</p><a class="primary" href="#shop">اكتشف المتجر ←</a></div></section>
