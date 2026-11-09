@@ -15,15 +15,15 @@ html{scroll-behavior:smooth}a{color:inherit}.filters button{color:var(--ink);fon
 <dialog id="cart"><button class="close" onclick="cart.close()" aria-label="إغلاق">×</button><h2>سلة المشتريات</h2><p class="muted">الشراء غير مفعّل حالياً. سنفعّل السلة عند إدخال المنتجات والأسعار الحقيقية.</p><button class="primary" onclick="cart.close()">رجوع للمتجر</button></dialog>
 <script>
 const catalog=[
-{id:1,ar:'فلاتر برويستا أرتيزان',en:'Brewista Artisan Filters',img:'0B5626DA-56E4-4F03-BC4F-F419D733D80B.png',variants:[['1–2 Cups · 100 pcs',18],['2–4 Cups · 100 pcs',22]]},
+{id:1,ar:'فلاتر برويستا أرتيزان',en:'Brewista Artisan Filters',img:'9317EAD5-667C-4BAA-9A36-2F2ADFA84A10.png',variants:[['1–2 Cups · 100 pcs',18],['2–4 Cups · 100 pcs',22]]},
 {id:2,ar:'فلاتر قهوة 90 درجة',en:'90° Cone Coffee Filters',img:'1EBE19A3-351D-4C6C-BA46-CF923A43FFC3.png',variants:[['01 · 100 pcs',18],['02 · 100 pcs',20]]},
-{id:3,ar:'فلاتر ماسوكازي',en:'Masukaze Coffee Filters',img:'3DA4F4C3-D420-4652-BE7E-A2855A078493.png',variants:[['01 · 40 pcs',16],['02 · 40 pcs',18]]},
-{id:4,ar:'فلاتر هاريو V60',en:'Hario V60 Filters',img:'6B674E24-182F-491A-9F10-059CB67CE81A.png',variants:[['01 · 100 pcs',19],['02 · 100 pcs',21]]},
+{id:3,ar:'فلاتر ماسوكازي',en:'Masukaze Coffee Filters',img:'0B5626DA-56E4-4F03-BC4F-F419D733D80B.png',variants:[['01 · 40 pcs',16],['02 · 40 pcs',18]]},
+{id:4,ar:'فلاتر هاريو V60',en:'Hario V60 Filters',img:'3DA4F4C3-D420-4652-BE7E-A2855A078493.png',variants:[['01 · 100 pcs',19],['02 · 100 pcs',21]]},
 {id:5,ar:'فلاتر كاليتا ويف 155',en:'Kalita Wave Filters 155',img:'7901556D-27A7-43B2-8617-348D64C9376D.png',variants:[['50 pcs',20]]},
-{id:6,ar:'فلاتر كاليتا ويف 185',en:'Kalita Wave Filters 185',img:'9317EAD5-667C-4BAA-9A36-2F2ADFA84A10.png',variants:[['50 pcs',20]]},
-{id:7,ar:'فلاتر كاليتا ويف 250',en:'Kalita Wave Filters 250',img:'97E06B0C-2F8B-4ECE-9503-D91665047633.png',variants:[['250 pcs',90]]},
-{id:8,ar:'فلاتر تايمور',en:'Timemore Coffee Filters',img:'E79E7F6B-B399-40BD-BC16-A26CB40AD360.png',variants:[['01 · 1–2 Cups · 100 pcs',23],['02 · 2–3 Cups',25]]},
-{id:9,ar:'أكياس تقطير القهوة للاستعمال مرة واحدة',en:'Disposable Drip Coffee Filter Bags',img:'F1996EF4-FFB3-4933-B4C4-96C1671F1809.png',variants:[['50 pcs',45]]}
+{id:6,ar:'فلاتر كاليتا ويف 185',en:'Kalita Wave Filters 185',img:'97E06B0C-2F8B-4ECE-9503-D91665047633.png',variants:[['50 pcs',20]]},
+{id:7,ar:'فلاتر كاليتا ويف 250',en:'Kalita Wave Filters 250',img:'E79E7F6B-B399-40BD-BC16-A26CB40AD360.png',variants:[['250 pcs',90]]},
+{id:8,ar:'فلاتر تايمور',en:'Timemore Coffee Filters',img:'F1996EF4-FFB3-4933-B4C4-96C1671F1809.png',variants:[['01 · 1–2 Cups · 100 pcs',23],['02 · 2–3 Cups',25]]},
+{id:9,ar:'أكياس تقطير القهوة للاستعمال مرة واحدة',en:'Disposable Drip Coffee Filter Bags',img:'6B674E24-182F-491A-9F10-059CB67CE81A.png',variants:[['50 pcs',45]]}
 ];
 const list=document.getElementById('products');let filter='all';
 function lang(){return document.documentElement.lang==='en'?'en':'ar'}
